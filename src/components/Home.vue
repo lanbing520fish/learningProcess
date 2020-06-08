@@ -1,13 +1,13 @@
 <template>
-  <div id="app">
+  <div class="home">
     <Left :text="text" />
     <right />
   </div>
 </template>
 
 <script>
-import Left from "./components/Left.vue";
-import Right from "./components/Right.vue";
+import Left from "./Left.vue";
+import Right from "./Right.vue";
 
 export default {
   name: "App",
@@ -24,7 +24,8 @@ export default {
 </script>
 
 <style>
-#app {
+.home {
+  position: relative;
   width: 100%;
   height: 100%;
 }
