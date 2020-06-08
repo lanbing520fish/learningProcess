@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Left :text="text" />
+    <Left />
     <right />
   </div>
 </template>
@@ -12,9 +12,7 @@ import Right from "./components/Right.vue";
 export default {
   name: "App",
   data() {
-    return {
-      text: "12341234"
-    };
+    return {};
   },
   components: {
     Left,

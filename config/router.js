@@ -8,12 +8,18 @@ VueRouter.prototype.push = function push(location) {
 
 Vue.use(VueRouter);
 
-const Home = () => import("../src/components/Home.vue");
-const Index = () => import("../src/Index.vue");
+const Index = () => import("../src/view/Index.vue");
+const DataBinding = () => import("../src/view/DataBinding.vue");
+const DifferenceBetweenShowAndIf = () =>
+  import("../src/view/DifferenceBetweenShowAndIf.vue");
 
 export default new VueRouter({
   routes: [
-    { path: "/", component: Home },
-    { path: "/index", component: Index }
+    { path: "/", component: Index },
+    { path: "/dataBinding", component: DataBinding },
+    {
+      path: "/differenceBetweenShowAndIf",
+      component: DifferenceBetweenShowAndIf
+    }
   ]
 });

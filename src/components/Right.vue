@@ -1,6 +1,8 @@
 <template>
   <div class="right">
-    <router-view></router-view>
+    <div class="right-content-box">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -15,7 +17,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .right {
   position: absolute;
   right: 0;
@@ -23,5 +25,10 @@ export default {
   bottom: 0;
   left: 302px;
   overflow: auto;
+  .right-content-box {
+    padding: 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
 }
 </style>
