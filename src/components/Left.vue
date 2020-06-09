@@ -7,9 +7,7 @@
           @click="returnText(item)"
           :key="index"
           :class="{ active: checkedTitle == item.title }"
-        >
-          {{ index + 1 }}、{{ item.title }}
-        </li>
+        >{{ index + 1 }}、{{ item.title }}</li>
       </ul>
     </div>
   </div>
@@ -42,7 +40,7 @@ export default {
         },
         {
           title: "router",
-          url: ""
+          url: "router"
         },
         {
           title: "SASS",
