@@ -6,7 +6,7 @@
           v-for="(item, index) in leftList"
           @click="returnText(item)"
           :key="index"
-          :class="{ active: checkedTitle == item.title }"
+          :class="{ active: checkedUrl == item.url }"
         >{{ index + 1 }}、{{ item.title }}</li>
       </ul>
     </div>
@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      checkedTitle: "",
+      checkedUrl: "",
       leftList: [
         {
           title: "首页",
@@ -35,24 +35,29 @@ export default {
           url: "dataBinding"
         },
         {
-          title: "v-show和v-if有什么区别",
-          url: "differenceBetweenShowAndIf"
-        },
-        {
-          title: "router",
+          title: "引入Router",
           url: "router"
         },
         {
-          title: "SASS",
-          url: ""
+          title: "引入SASS",
+          url: "sass"
+        },
+        {
+          title: "v-show和v-if有什么区别",
+          url: "differenceBetweenShowAndIf"
         }
       ]
     };
   },
+  created() {
+    let pathName = window.location.href;
+    let pathIndex = window.location.href.lastIndexOf("/");
+    this.checkedUrl = pathName.slice(pathIndex + 1);
+  },
   methods: {
     returnText(val) {
       this.$router.push("./" + val.url);
-      this.checkedTitle = val.title;
+      this.checkedUrl = val.url;
     }
   }
 };
