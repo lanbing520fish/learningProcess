@@ -40,7 +40,11 @@
       }).$mount(app);</code>
     </pre>
     <br />
-    <h4>4、遇到Error: Avoided redundant navigation to current location:报错显示是路由重复</h4>
+    <h4>4、在需要路由跳转的地方，添加指令</h4>
+    <pre>
+      <code>{{routerText}}</code>
+    </pre>
+    <h4>5、遇到Error: Avoided redundant navigation to current location:报错显示是路由重复</h4>
     <p>在router.js添加以下代码</p>
     <pre>
       <code>const originalPush = VueRouter.prototype.push;
@@ -55,7 +59,9 @@
 export default {
   name: "Router",
   data() {
-    return {};
+    return {
+      routerText: "<router-view></router-view>"
+    };
   },
   components: {}
 };

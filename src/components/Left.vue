@@ -31,16 +31,16 @@ export default {
           url: ""
         },
         {
-          title: "MVVM双向数据绑定原理",
-          url: "dataBinding"
-        },
-        {
           title: "引入Router",
           url: "router"
         },
         {
           title: "引入SASS",
           url: "sass"
+        },
+        {
+          title: "MVVM双向数据绑定原理",
+          url: "dataBinding"
         },
         {
           title: "v-show和v-if有什么区别",
