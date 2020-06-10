@@ -14,6 +14,7 @@ const DifferenceBetweenShowAndIf = () =>
   import("../src/view/DifferenceBetweenShowAndIf.vue");
 const Router = () => import("../src/view/Router.vue");
 const Sass = () => import("../src/view/Sass.vue");
+const Set = () => import("../src/view/Set.vue");
 
 export default new VueRouter({
   routes: [
@@ -30,6 +31,10 @@ export default new VueRouter({
     {
       path: "/sass",
       component: Sass
+    },
+    {
+      path: "/set",
+      component: Set
     }
   ]
 });

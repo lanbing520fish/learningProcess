@@ -35,6 +35,10 @@ export default {
           url: "router"
         },
         {
+          title: "router mode-hash:history",
+          url: ""
+        },
+        {
           title: "引入SASS",
           url: "sass"
         },
@@ -45,6 +49,10 @@ export default {
         {
           title: "v-show和v-if有什么区别",
           url: "differenceBetweenShowAndIf"
+        },
+        {
+          title: "为什么要使用Vue.$set()",
+          url: "set"
         }
       ]
     };
