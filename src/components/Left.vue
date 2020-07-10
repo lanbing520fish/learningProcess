@@ -57,6 +57,10 @@ export default {
         {
           title: "vue项目打包之后页面空白解决办法",
           url: "build"
+        },
+        {
+          title: "前端知识点整理",
+          url: "interviewQuestions"
         }
       ]
     };
